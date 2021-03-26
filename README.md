@@ -1,4 +1,6 @@
 ### Hi there 👋
+这是天津工业大学tgu-uow联合实验室网站！
+tgu-uow.github.io
 
 <!--
 **tgu-uow/tgu-uow** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
