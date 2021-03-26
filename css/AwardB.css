@@ -1,0 +1,25 @@
+.paper {
+    height: 20%;
+
+}
+
+.paper-title {
+    font-size: 1.4em;
+    color: #b5c0d0;
+    float: left;
+
+}
+
+.paper-img {
+    width: 18%;
+    height: 10%;
+    float: left;
+    display: none;
+
+}
+
+.paper-information {
+    float: left;
+    padding-left: 6%;
+    width: 80%;
+}

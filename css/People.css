@@ -1,0 +1,36 @@
+.family-img{
+    height: 10%;
+    width: 83%;
+    background-color: #1c7430;
+    margin: 0 10%;
+}
+
+.clearfix{
+    width: 100%;
+    padding-top: 5%;
+}
+
+.person{
+    height: 10%;
+    width: 100%;
+    float: left;
+    padding-top: 5%;
+}
+
+.img {
+    height:  8%;
+    width: 15%;
+    float: left;
+}
+
+.intro {
+    float: left;
+    padding-left: 10%;
+    padding-top: 2%;
+    font-family: Roboto;
+    width: 85%;
+}
+
+.space{
+    height: 10%;
+}

@@ -1,0 +1,165 @@
+.family-img{
+    height: 10%;
+    width: 83%;
+    background-color: #1c7430;
+    margin: 0 10%;
+    display: none;
+}
+
+.clearfix{
+    width: 100%;
+    padding-top: 5%;
+}
+
+.person{
+    height: 10%;
+    width: 100%;
+    float: left;
+    padding-top: 5%;
+}
+
+.img {
+    height:  8%;
+    width: 15%;
+    float: left;
+    display: none;
+}
+
+.intro {
+    float: left;
+    padding-left: 10%;
+    padding-top: 2%;
+    font-family: Roboto;
+    width: 85%;
+}
+
+.space{
+    height: 10%;
+}
+
+
+/*common.css*/
+
+
+.heading {
+    text-align: center;
+    padding-top: 5%;
+}
+
+#font1 {
+    color: #fd8f25;
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+#font2 {
+    color: #495460;
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+#font2:hover {
+    color: #fd8f25;
+}
+
+.container {
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+.col-md-1 {
+    text-align: center;
+    font-family: Roboto;
+}
+
+#origin1 {
+    color: #495460;
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+#origin1:hover {
+    color: #fd8f25;
+}
+
+#origin2 {
+    color: #b5c0d0;
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+#origin2:hover {
+    color: #fd8f25;
+}
+
+#origin3 {
+    color: #b5c0d0;
+    text-decoration: none;
+    font-size:1.8em;
+}
+
+#origin3:hover {
+    color: #fd8f25;
+}
+
+#origin4 {
+    color: #b5c0d0;
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+#origin4:hover {
+    color: #fd8f25;
+}
+
+#origin5 {
+    color: #b5c0d0;
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+#origin5:hover {
+    color: #fd8f25;
+}
+
+#origin6 {
+    color: #b5c0d0;
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+#origin6:hover {
+    color: #fd8f25;
+}
+
+
+.main {
+    border-top: 1px solid #b5c0d0;
+    padding-top: 4%;
+    padding-left: 12%;
+    padding-right: 15%;
+    padding-bottom: 4%;
+}
+
+.col-md-3 {
+    color: #fd8f25;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: Roboto;
+}
+
+.col-md-9 {
+    padding-top: 1%;
+    text-align: justify;
+    font-size: 1.7em;
+    font-family: Roboto;
+    color: #415160;
+}
+
+
+.bottom {
+    border-top: 1px solid #b5c0d0;
+    text-align: center;
+    font-family: Roboto;
+    color: #415160;
+}
