@@ -6,13 +6,13 @@
 #font1 {
     color: #fd8f25;
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 2.8em;
 }
 
 #font2 {
     color: #495460;
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 2.8em;
 }
 #font3 {
     color: #636364;
@@ -31,6 +31,7 @@
 .col-md-1 {
     text-align: center;
     font-family: Roboto;
+	margin-right: 35px;
 }
 
 #origin1 {
@@ -105,7 +106,7 @@
 .col-md-3 {
     color: #fd8f25;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3.5em;
     font-family: Roboto;
 }
 
@@ -124,4 +125,19 @@
     font-family: Roboto;
     color: #415160;
 }
+
+.box-a,.box-b{
+	width:400px;
+	height:150px; 
+	float:left
+	}
+	
+.box-a{ 
+/* 	border:1px solid #00F; */
+	margin-right:60px
+	}
+	
+/* .box-b{ 
+	border:1px solid #F00
+	} */
 

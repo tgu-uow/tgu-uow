@@ -31,7 +31,7 @@
 .col-md-1 {
     text-align: center;
     font-family: Roboto;
-	margin-right: 20px;
+	margin-right: 38px;
 }
 
 #origin1 {
@@ -113,7 +113,7 @@
 .col-md-9 {
     padding-top: 1%;
     text-align: justify;
-    font-size: 1.7em;
+    font-size: 1.8em;
     font-family: Roboto;
     color: #415160;
 }
@@ -125,3 +125,18 @@
     font-family: Roboto;
     color: #415160;
 }
+
+.box-a,.box-b{
+	width:400px;
+	height:150px; 
+	float:left
+	}
+	
+.box-a{ 
+/* 	border:1px solid #00F; */
+	margin-right:60px
+	}
+	
+/* .box-b{ 
+	border:1px solid #F00
+	} */
