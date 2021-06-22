@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+	
+<link rel="stylesheet" href="../css/Project.css">
+<link rel="stylesheet" href="../css/chinese-common.css">
+<link rel="stylesheet" href="../css/bootstrap-grid.css">
+<link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/bootstrap.css">
+
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>天津工业大学联合实验室</title>
+			<!--[if lt IE 9]>
+			<script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+			<![endif]-->
+		<script type="text/javascript">
+			var browser={
+				versions:function(){
+					var u = navigator.userAgent, app = navigator.appVersion;
+					//移动设备浏览器版本信息
+					return {
+						//IE内核
+						trident: u.indexOf('Trident') > -1,
+						//opera内核
+						presto: u.indexOf('Presto') > -1,
+						//苹果、谷歌内核
+						webKit: u.indexOf('AppleWebKit') > -1,
+						//火狐内核
+						gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+						//是否为移动终端
+						mobile: !!u.match(/AppleWebKit.*Mobile.*/),
+						//ios终端
+						ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+						//android终端或者uc浏览器
+						android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+						//是否为iPhone或者QQHD浏览器
+						iPhone: u.indexOf('iPhone') > -1 ,
+						//是否iPad
+						iPad: u.indexOf('iPad') > -1,
+						//是否web应该程序，没有头部与底部
+						webApp: u.indexOf('Safari') == -1
+					};
+				}(),
+				language:(navigator.browserLanguage || navigator.language).toLowerCase()
+			}
+
+			if(browser.versions.mobile || browser.versions.ios || browser.versions.android || browser.versions.iPhone || browser.versions.iPad){    cssChange();
+			}
+
+			function cssChange(){
+				var link = document.getElementsByTagName('link')[0];
+				//PC端应用的样式文件：People.css
+				link.setAttribute('href','../css/Project.css');
+				//Mobile端应用样式文件：style_B.css
+			}
+		</script>
+	</head>
+	<body>
+		<div align="right">
+			中文版丨
+			<a href="Publication.html">English丨</a>
+			<a href="Japanese.html">にほんご</a>
+		</div>
+		<div class="heading">
+			<h1>
+				<p id="font1" style="font-size: 2.2em;"> 天津工业大学-澳大利亚伍伦贡大学</a> 
+			</h1>
+			<br>
+			<h1>
+				<p id="font3" style="font-size: 2.2em;">视觉计算实验室</p>
+			</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-1"></div>
+				<div class="col-md-1"><a href="../index.html" id="origin1">首页</a></div>
+				<div class="col-md-1"><a href="Member_CN.html" id="origin2">实验室成员</a></div>
+				<div class="col-md-1"><a href="" id="origin5">研究课题</a></div>
+				<div class="col-md-1"><a href="Publication_CN.html" id="origin4">出版物</a></div>
+				<div class="col-md-1"><a href="Contact_CN.html" id="origin6">联系我们</a></div>
+				<div class="col-md-1"></div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+		<div class="main">
+			<div style="font-size: 3em;" align="center">
+				<strong>视网膜血管分割和动静脉分类</strong>
+			</div>
+			<div class="content" style="padding-right: 3.5em; padding-left: 3.5em;">
+				&nbsp; &nbsp; &nbsp; &nbsp; 研究表明，糖尿病并发症会导致视网膜血管形态发生异常。临床上，眼底图像中一定范围内的视网膜动静脉形态变化被作为糖尿病视网膜病变病程的判断依据。
+				然而目前，医生主要通过人工标注的方法对视网膜血管进行多点采样测量。该方法耗时费力，且主观性强，不适合大量的糖尿病视网膜病变筛查工作。
+				因此，实现眼底图像视网膜血管的自动化分割和动静脉自动分类，对糖尿病视网膜早期病变的客观、快速诊断具有重要意义。
+				<br>
+				&nbsp; &nbsp; &nbsp; &nbsp; 我们利用U-Net 框架分别实现了眼底图像视网膜血管的分割和动静脉的分类。
+				视网膜血管分割部分，针对原始 U-Net 在分割血管时，存在抗干扰能力弱和血管连通性差的问题，我们采用的方法在 U-Net 中添加 mini-UNets 的迭代体系结构和跳过连接方法，
+				以学习更多区分视网膜血管和非血管像素的特征，并抑制由于网络深度增加出现的过拟合现象。视网膜血管动静脉分类部分，
+				针对眼底图像中视网膜动脉或视网膜静脉的像素数与背景像素数之间的不平衡以及现有方法分割能力差等问题，我们提出了基于并联 IterNet 网络的视网膜血管动静脉分类方法，
+				该方法将眼底图像和分割后的视网膜血管图像作为输入，减少了标签分布的偏差；并且将视网膜血管动静脉分类任务划分为视网膜动脉分割和视网膜静脉分割两部分，利用相对容易的血管分割任务，提高了视网膜血管动静脉分类的性能。
+			</div>
+			<div align="center">
+				<img src = '../images/yandi2.PNG' style="padding-right: 3em; padding-left: 3em;">
+				<img src = '../images/yandi3.PNG' style="padding-right: 3em; padding-left: 3em; transform: scale(0.8);">
+			</div>
+			<div style="font-size: 3em;" align="center">
+				<strong>角膜神经图像渐晕伪影的消除</strong>
+			</div>
+			<div class="content" style="padding-right: 3.5em; padding-left: 3.5em;">
+				&nbsp; &nbsp; &nbsp; &nbsp; 角膜神经是角膜中重要的组织，医生可以根据角膜神经的走形与密度分析出患者角膜的各种病变甚至全身性疾病，比如可引起糖尿病足甚至截肢的糖尿病周围神经病变、
+				第二大神经退行性疾病帕金森病等。角膜神经图片使用共聚焦显微镜获取，但原始图像视场小，仅能显示局部神经特征，角膜图像拼接技术可以在保持相同分辨率的前提下扩大角膜图像的可视区域，帮助医生看到角膜神经分布全图，
+				推进医生的诊断工作。由于共聚焦显微镜透镜边缘限制光线进入，导致轴外光线的光强度减弱，造成图像渐晕效应。相比图像中心区域，四周呈对称性变暗，且渐晕强度随径向距离的增加而增大。渐晕失真会在拼接处产生伪影，影响医生观感和诊断效果。
+			</div>
+			<br>
+			<div align="center">
+				<img src = '../images/jiaomo2.PNG' style="padding-right: 3em; padding-left: 3em;">
+				<img src = '../images/jiaomo.PNG' style="padding-right: 3em; padding-left: 3em;">
+			</div>
+			<br>
+			<div style="font-size: 3em;" align="center">
+				<strong>适用于军事战场伪装的特征合成方法</strong>
+			</div>
+			<div class="content" style="padding-right: 3.5em; padding-left: 3.5em;">
+				&nbsp; &nbsp; &nbsp; &nbsp; 为了快速适应战场环境的变化，军事伪装必须是多变的。如果衣服和坦克等车辆的伪装图案与环境不同，敌人的相机很容易找到。
+				众所周知，同样的模式被用在当今世界上大多数的军事上。我们提出了一种利用卷积神经网络从图像中提取特征的新方法。
+				然后模式会结合环境风格模式。合成图像最终被映射到实际3D服装和车辆的表面上，我们采用Tobii眼动仪对结果进行评价。
+				即使在不同而复杂的环境中也能产生合适的特征图像。
+			</div>
+			<br>
+			<div align="center">
+				<img src = '../images/micai1.jpg' style="padding-right: 3.5em; padding-left: 3.5em;">
+				<img src = '../images/micai2.jpg' style="padding-right: 3em; padding-left: 3em;">
+			</div>
+		</div>
+		<br>
+		<div class="bottom">
+			版权所有©TGU-UOW LAB 2021 ♦ 天津工业大学电气与电子工程学院
+			<br>
+			<address>地址：天津市西青区宾水西道399号电信学院4B215</address>
+		</div>
+	</body>
+</html>
+	

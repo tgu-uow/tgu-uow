@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<link rel="stylesheet" href="../css/chinese-common.css">
+<link rel="stylesheet" href="../css/Publication.css">
+<link rel="stylesheet" href="../css/bootstrap-grid.css">
+<link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/bootstrap.css">
+
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>天津工业大学联合实验室</title>
+			<!--[if lt IE 9]>
+			<script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+			<![endif]-->
+		<script type="text/javascript">
+			var browser={
+				versions:function(){
+					var u = navigator.userAgent, app = navigator.appVersion;
+					//移动设备浏览器版本信息
+					return {
+						//IE内核
+						trident: u.indexOf('Trident') > -1,
+						//opera内核
+						presto: u.indexOf('Presto') > -1,
+						//苹果、谷歌内核
+						webKit: u.indexOf('AppleWebKit') > -1,
+						//火狐内核
+						gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+						//是否为移动终端
+						mobile: !!u.match(/AppleWebKit.*Mobile.*/),
+						//ios终端
+						ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+						//android终端或者uc浏览器
+						android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+						//是否为iPhone或者QQHD浏览器
+						iPhone: u.indexOf('iPhone') > -1 ,
+						//是否iPad
+						iPad: u.indexOf('iPad') > -1,
+						//是否web应该程序，没有头部与底部
+						webApp: u.indexOf('Safari') == -1
+					};
+				}(),
+				language:(navigator.browserLanguage || navigator.language).toLowerCase()
+			}
+
+			if(browser.versions.mobile || browser.versions.ios || browser.versions.android || browser.versions.iPhone || browser.versions.iPad){    cssChange();
+			}
+
+			function cssChange(){
+				var link = document.getElementsByTagName('link')[0];
+				//PC端应用的样式文件：People.css
+				link.setAttribute('href','../css/Publication.css');
+				//Mobile端应用样式文件：style_B.css
+			}
+		</script>
+	</head>
+	<body>
+		<div align="right">
+			中文版丨
+			<a href="Publication.html">English丨</a>
+			<a href="Japanese.html">にほんご</a>
+		</div>
+		<div class="heading">
+			<h1>
+				<p id="font1" style="font-size: 2.2em;"> 天津工业大学-澳大利亚伍伦贡大学</a> 
+			</h1>
+			<br>
+			<h1>
+				<p id="font3" style="font-size: 2.2em;">视觉计算实验室</p>
+			</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-1"></div>
+				<div class="col-md-1"><a href="../index.html" id="origin1">首页</a></div>
+				<div class="col-md-1"><a href="Member_CN.html" id="origin2">实验室成员</a></div>
+				<div class="col-md-1"><a href="Project_CN.html" id="origin5">研究课题</a></div>
+				<div class="col-md-1"><a href="Publication_CN.html" id="origin4">出版物</a></div>
+				<div class="col-md-1"><a href="" id="origin6">联系我们</a></div>
+				<div class="col-md-1"></div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+		<div class="main">
+			<div style="font-size: 2.2em;" align="justify">
+				地址：天津市西青区宾水西道399号天津工业大学电气与电子工程学院4B215
+				<img src="../images/map.PNG" height="620" width="620" align="justify">
+			</div>
+			<br>
+			<div style="font-size: 2.2em;" align="justify">
+				E-Mail：liguangxu@tiangong.edu.cn
+			</div>
+			<br>
+			<div style="font-size: 2.3em; color: brown;" align="justify" >
+				欢迎各位交流来访。
+			</div>
+		</div>
+		<div class="bottom">版权所有©TGU-UOW LAB 2021 ♦ 天津工业大学电气与电子工程学院
+			<br>
+			<address>地址：天津市西青区宾水西道399号电信学院4B215</address>
+		</div>
+	</body>
+</html>
+	
